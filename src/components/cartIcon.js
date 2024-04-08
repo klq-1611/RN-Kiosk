@@ -1,11 +1,16 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import * as Icon from 'react-native-feather'
-export default function CartIcon() {
-    return (
-        <View className="absolute bottom-20 w-full z-50">
+import { useNavigation } from '@react-navigation/native'
 
-            <TouchableOpacity className="flex-row items-center justify-between bg-red-800 p-3 py-3 shadow-lg rounded-full mx-4">
+export default function CartIcon() {
+    const navigation = useNavigation();
+    return (
+        <View className="absolute bottom-20 py-7 w-full z-50">
+            <TouchableOpacity className="flex-row items-center justify-between bg-red-800 p-4 py-3 shadow-lg rounded-full"
+                onPress={() => navigation.navigate("Cart")}
+            >
+
                 <View className="p-2 px-4 rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.3)' }}>
                     <Text className="text-white font-bold text-lg">4</Text>
                 </View>

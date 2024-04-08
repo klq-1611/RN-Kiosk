@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { themeColor } from '../theme'
 import * as Icon from 'react-native-feather'
+
 
 
 export default function DishRow({ dish }) {
