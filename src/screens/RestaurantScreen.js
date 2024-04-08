@@ -7,7 +7,7 @@ import * as Icon from 'react-native-feather'
 export default function RestaurantScreen() {
   return (
     <View>
-      <Text>Restaurant Screen1</Text>
+      <Text>Hello World123</Text>
     </View>
 
   )
